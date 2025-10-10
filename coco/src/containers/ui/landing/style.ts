@@ -9,9 +9,15 @@ const Basic = `
 
 export const Container = styled.div`
   ${Basic};
-  width: 100%;
-  max-width: 400px;
-  height: 100vh;
-  row-gap: 10rem;
-  cursor: pointer;
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+`;
+
+export const Letter = styled.div<{ rotate: number; y: number }>`
+  font-weight: bold;
+  font-size: 4rem;
+  display: inline-block;
+  transform: rotate(${(props) => props.rotate}deg) translateY(${(props) => props.y}px);
 `;
