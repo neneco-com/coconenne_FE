@@ -1,4 +1,5 @@
 import * as _ from './style';
+import Btn from '@/components/button';
 
 export default function LogoText() {
     const letters = [
@@ -17,6 +18,7 @@ export default function LogoText() {
                     </_.Letter>
                 ))}
             </_.Wrapper>
+            <Btn>회원가입 하러가기</Btn>
         </_.Container>
     );
 }
