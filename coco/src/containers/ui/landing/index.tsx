@@ -3,10 +3,10 @@ import Btn from '@/components/button';
 
 export default function LogoText() {
     const letters = [
-        { text: '코', rotate: -8, y: 4 },
-        { text: '코', rotate: 5, y: -6 },
-        { text: '넨', rotate: -4, y: 3 },
-        { text: '네', rotate: 7, y: -5 },
+        { text: '코', rotate: -8, y: 4, x: 0 },
+        { text: '코', rotate: 5, y: -6, x: 2 },
+        { text: '넨', rotate: 4, y: 30, x: 4 },
+        { text: '네', rotate: -3, y: 22, x: 6 },
     ];
 
     return (
