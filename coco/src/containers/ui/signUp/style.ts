@@ -8,3 +8,14 @@ export const Container = styled.div`
   gap: 15rem;
   display: flex;
 `;
+
+export const Wrapper = styled.div`
+  display: flex;
+`;
+
+export const Letter = styled.div<{ rotate: number; y: number }>`
+  font-weight: bold;
+  font-size: 4rem;
+  display: inline-block;
+  transform: rotate(${(props) => props.rotate}deg) translateY(${(props) => props.y}px);
+`;
