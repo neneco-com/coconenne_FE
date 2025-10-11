@@ -14,7 +14,6 @@ const Input = styled.input`
   border: none;
   border-radius: 999px;
   background-color: #F5F7F8;
-  color: #333;
   font-size: 1.25rem;
   outline: none;
   cursor: pointer;
@@ -24,10 +23,10 @@ const Input = styled.input`
   }
 
   &:hover {
-    background-color: #eaebeb;
+    background-color: #eff1f1;
   }
 
   &:focus {
-    background-color: #eaebeb;
+    background-color: #eff1f1;
   }
 `;
