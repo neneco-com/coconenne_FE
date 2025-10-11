@@ -1,7 +1,12 @@
+'use client';
+
 import * as _ from './style';
 import Btn from '@/components/button';
+import { useRouter } from 'next/navigation';
 
 export default function LogoText() {
+    const router = useRouter();
+
     const letters = [
         { text: '코', rotate: -8, y: 4, x: 0 },
         { text: '코', rotate: 5, y: -6, x: 2 },
@@ -18,7 +23,7 @@ export default function LogoText() {
                     </_.Letter>
                 ))}
             </_.Wrapper>
-            <Btn>회원가입 하러가기</Btn>
+            <Btn onClick={() => router.push('/signUp')}> 회원가입 하러가기 </Btn>
         </_.Container>
     );
 }
