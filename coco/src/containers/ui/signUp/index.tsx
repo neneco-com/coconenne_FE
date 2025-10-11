@@ -4,8 +4,11 @@ import * as _ from './style';
 import TextBox from '@/components/textBox';
 import { useState } from 'react';
 import Btn from '@/components/button';
+import { useRouter } from 'next/navigation';
 
 export default function SignUp() {
+  const router = useRouter();
+
   const [miniCode, setMiniCode] = useState('');
   const [id, setId] = useState('');
   const [password, setPassword] = useState('');
@@ -44,7 +47,7 @@ export default function SignUp() {
             placeholder="비밀번호"
           />
         </_.TextGroup>
-        <Btn>회원가입</Btn>
+        <Btn onClick={() => router.push('/signUpModal')}>회원가입</Btn>
       </_.Group>
     </_.Container>
   );
