@@ -7,6 +7,7 @@ export const Container = styled.div`
   justify-content: center;
   height: 100vh;
   gap: 2rem;
+  cursor: pointer;
 `;
 
 export const TextGroup = styled.div`

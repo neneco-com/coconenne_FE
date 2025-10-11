@@ -1,7 +1,10 @@
-import * as _ from './style';
+import * as _ from "./style";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function SignUpModal() {
+    const router = useRouter();
+
     const lettersTop = [
         { text: "회", rotate: -8, y: 4 },
         { text: "원", rotate: 5, y: 0 },
@@ -14,8 +17,12 @@ export default function SignUpModal() {
         { text: "료", rotate: 5, y: 6 },
     ];
 
+    const handleClick = () => {
+        router.push("/");
+    };
+
     return (
-        <_.Container>
+        <_.Container onClick={handleClick}>
             <Image src="/assets/apply.svg" alt="check" width={80} height={80} />
             <_.TextGroup>
                 <_.Wrapper>
