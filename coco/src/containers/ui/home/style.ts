@@ -46,8 +46,10 @@ export const Box = styled.button`
   border-radius: 1rem;
   background-color: #FEFEFE;
   cursor: pointer;
+  transition: all 0.25s ease;
 
   :hover {
+    transform: translateY(-5px);
     box-shadow: 0px 0px 20px rgba(255, 242, 93, 0.5);
   }
 `;
