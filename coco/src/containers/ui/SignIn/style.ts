@@ -26,7 +26,7 @@ export const Letter = styled.div<{ rotate: number; y: number }>`
 
 export const Group = styled.div`
     ${Basic}
-    row-gap: 10rem;
+    row-gap: 14rem;
 `;
 
 export const TextGroup = styled.div`

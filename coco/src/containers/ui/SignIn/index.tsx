@@ -14,9 +14,9 @@ export default function SignUp() {
   const [password, setPassword] = useState('');
 
   const letters = [
-    { text: '로', rotate: -8, y: 4, x: 0 },
-    { text: '그', rotate: 5, y: 0, x: 2 },
-    { text: '인', rotate: 4, y: 4, x: 4 },
+    { text: '로', rotate: 2, y: 3, x: 0 },
+    { text: '그', rotate: -3, y: 1, x: 0 },
+    { text: '인', rotate: -4, y: -2, x: 0 },
   ];
 
   return (
@@ -31,11 +31,6 @@ export default function SignUp() {
       <_.Group>
         <_.TextGroup>
           <TextBox
-            value={miniCode}
-            onChange={(e) => setMiniCode(e.target.value)}
-            placeholder="미니코드"
-          />
-          <TextBox
             value={id}
             onChange={(e) => setId(e.target.value)}
             placeholder="아이디"
@@ -46,7 +41,7 @@ export default function SignUp() {
             placeholder="비밀번호"
           />
         </_.TextGroup>
-        <Btn onClick={() => router.push('/signUpModal')}>회원가입</Btn>
+        <Btn onClick={() => router.push('/signUpModal')}>로그인</Btn>
       </_.Group>
     </_.Container>
   );
