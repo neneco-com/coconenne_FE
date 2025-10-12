@@ -23,7 +23,7 @@ export default function LogoText() {
                     </_.Letter>
                 ))}
             </_.Wrapper>
-            <Btn onClick={() => router.push('/signUp')}> 회원가입 하러가기 </Btn>
+            <Btn onClick={() => router.push('/signUp')}>들어가기</Btn>
         </_.Container>
     );
 }
