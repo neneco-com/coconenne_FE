@@ -51,5 +51,6 @@ export const Box = styled.button`
   :hover {
     transform: translateY(-5px);
     box-shadow: 0px 0px 20px rgba(255, 242, 93, 0.5);
+    background-color: #F9FAFA;
   }
 `;
