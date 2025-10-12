@@ -17,12 +17,8 @@ export default function SignUpModal() {
         { text: "료", rotate: 5, y: 6 },
     ];
 
-    const handleClick = () => {
-        router.push("/");
-    };
-
     return (
-        <_.Container onClick={handleClick}>
+        <_.Container onClick={() => router.push('/signIn')}>
             <Image src="/assets/apply.svg" alt="check" width={80} height={80} />
             <_.TextGroup>
                 <_.Wrapper>

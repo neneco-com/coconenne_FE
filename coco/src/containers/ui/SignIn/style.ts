@@ -1,20 +1,35 @@
 import styled from "@emotion/styled";
 
+const Basic = `
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+`;
+
 export const Container = styled.div`
+  ${Basic}
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 22vh;
-  gap: 15rem;
+  gap: 4rem;
 `;
 
 export const Wrapper = styled.div`
-  display: flex;
+    display: flex;
 `;
 
 export const Letter = styled.div<{ rotate: number; y: number }>`
-  font-weight: bold;
+  display: flex;
+  font-weight: 500;
   font-size: 4rem;
   display: inline-block;
   transform: rotate(${(props) => props.rotate}deg) translateY(${(props) => props.y}px);
+`;
+
+export const Group = styled.div`
+    ${Basic}
+    row-gap: 14rem;
+`;
+
+export const TextGroup = styled.div`
+    ${Basic}
+    row-gap: 1.25rem;
 `;
