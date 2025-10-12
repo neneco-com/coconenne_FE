@@ -6,7 +6,6 @@ export const Container = styled.div`
   align-items: center;
   height: 22vh;
   gap: 15rem;
-  display: flex;
 `;
 
 export const Wrapper = styled.div`
