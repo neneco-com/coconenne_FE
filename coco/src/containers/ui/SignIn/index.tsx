@@ -41,7 +41,7 @@ export default function SignUp() {
             placeholder="비밀번호"
           />
         </_.TextGroup>
-        <Btn onClick={() => router.push('/signUpModal')}>로그인</Btn>
+        <Btn onClick={() => router.push('/main')}>로그인</Btn>
       </_.Group>
     </_.Container>
   );
