@@ -1,11 +1,14 @@
 import * as _ from './style';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 export default function Search() {
+    const router = useRouter()
+
     return (
         <_.Container>
             <_.Wrapper>
-                <Image src='assets/arrow.svg' alt='arrow' width={24} height={24} />
+                <Image src='assets/arrow.svg' alt='arrow' width={24} height={24} onClick={() => router.push('/main')} style={{ cursor: 'pointer' }} />
                 <_.Title>검색하기</_.Title>
             </_.Wrapper>
             <_.SearchWrapper>
