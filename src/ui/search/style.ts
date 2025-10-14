@@ -56,4 +56,5 @@ export const Box = styled.div`
     background-color: #EEEFF1;
     border-radius: 4px;
     padding: 6rem 5.3rem;
+    cursor: pointer;
 `;
