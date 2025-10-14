@@ -8,14 +8,14 @@ export const Container = styled.div`
   width: 400px;
   height: 76vh;
   padding: 0.8rem 1rem;
-  gap: 1.5rem;
+  gap: 1.2rem;
 `;
 
 export const Wrapper = styled.div`
     display: flex;
     align-items: center;
-    gap: 9rem;
-    width: 400px;
+    gap: 8rem;
+    width: 370px;
 `;
 
 export const Title = styled.div`
@@ -44,4 +44,16 @@ export const SearchInput = styled.input`
     &::placeholder {
         color: #B5BCBF;
     }
+`;
+
+export const BoxWrapper = styled.div`
+    display: flex;
+    gap: 1rem;
+`;
+
+export const Box = styled.div`
+    display: flex;
+    background-color: #EEEFF1;
+    border-radius: 4px;
+    padding: 6rem 5.3rem;
 `;

@@ -15,6 +15,18 @@ export default function Search() {
                 <Image src='assets/itemSearch.svg' alt='itemSearch' width={24} height={24} />
                 <_.SearchInput placeholder="원하는 상품을 검색하세요" />
             </_.SearchWrapper>
+            <_.BoxWrapper>
+                <_.Box />
+                <_.Box />
+            </_.BoxWrapper>
+            <_.BoxWrapper>
+                <_.Box />
+                <_.Box />
+            </_.BoxWrapper>
+            <_.BoxWrapper>
+                <_.Box />
+                <_.Box />
+            </_.BoxWrapper>
         </_.Container>
     );
 }
